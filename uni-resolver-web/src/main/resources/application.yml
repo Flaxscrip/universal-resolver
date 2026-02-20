@@ -427,3 +427,9 @@ uniresolver:
       url: ${uniresolver_web_driver_url_did_nda:http://driver-did-nda:8080/1.0/identifiers/$1}
       testIdentifiers:
         - did:nda:0x8c05abb015f5778ddeb0d0fa236fb8950f7bb637
+
+    - pattern: "^(did:cid:.+)$"
+      url: ${uniresolver_web_driver_url_did_cid:http://driver-did-cid:4250/1.0/identifiers/$1}
+      testIdentifiers:
+        - did:cid:bagaaieraxdxq4fm2kjh6yqjxjor3t2idczkmxd4v7in4u353fa6m6sms2pnq
+        - did:cid:bagaaierajzwcicueqdkbgk75lgekdmvtbo5zv3spq2p4f7d7ow42urlwi32a

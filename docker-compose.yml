@@ -434,3 +434,10 @@ services:
     image: ghcr.io/pilacorp/driver-did-nda:1.0.0
     ports:
       - "8166:8080"
+
+  driver-did-cid:
+    image: archetech/uni-resolver-driver-did-cid:0.1.0
+    environment:
+      ARCHON_GATEKEEPER_URL: ${uniresolver_driver_did_cid_gatekeeper_url}
+    ports:
+      - "4250:4250"
